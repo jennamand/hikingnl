@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Coffee! </title>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Palatino">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav style="position: absolute; top: 0px; width: 100%; margin: 10px 0px 10px;">
+        <div id="navbar-wrapper">
+            <div id="social-navbar">
+                <a class="nav-menu-link" href="https//www.facebook.com"> <img class="img-link" src="img/fb.png"> </a>
+                <a class="nav-menu-link" href="https//www.instagram.com"> <img class="img-link" src="img/insta.png"> </a>
+                <a class="nav-menu-link" href="https//www.twitter.com"> <img  class="img-link" src="img/twitter.png"> </a>
+            </div>
+            <div id="navbar-navigation">
+                <a class="nav-menu-link link" href="https//www.google.com">Home</a>
+                <a class="nav-menu-link link" href="https//www.google.com">Contact</a>
+                <a class="nav-menu-link link" href="https//www.google.com">About</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="hero-section">
+        <div id="wrapper">
+            <div id="heading-wrapper"> 
+                <h1 class="hero-heading"> I love  </h1> 
+                <h1 class="hero-heading" id="white"> coffee. </h1> 
+            </div>
+            <div id="main-text-wrapper">
+                <p id="mainText" style="font-size: 0.8em;">
+                    Coffee is good, we like drinking it to stay awake. There are many coffees around the world, but the best coffee there is the one in your hand that you are drinking right now.
+                </p>
+            </div>
+        </div>
+        <div id="coffee-price-wrapper">
+            <div class="coffee-price-p" id="coffee-price">~</div>
+            <div class="coffee-price-p"> per pound of Coffee right now.</div>
+        </div>
+        <div id="hero-bean"></div>
+    </section>
+
+
+
+    <section class="regular-margin-section">
+        <div class="row" style="display: flex; align-items: center; justify-content: center;">
+            <div class="column left">
+                <img class="column-image" src="img/esp_.jpg">
+                <div id="text-wrapper">
+                    <h3>espresso</h3>
+                </div>
+            </div>
+            <div class="column middle">
+                <div id="text-wrapper">
+                    <h3>cappuccino</h3>
+                </div>
+                <img class="column-image" src="img/cap_.jpg">
+            </div>
+            <div class="column right">
+                <img class="column-image" src="img/latte_.jpg">
+                <div id="text-wrapper">
+                    <h3>latte</h3>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="regular-margin-section">
+        
+        <div class="parent">
+            <div id="grid-wrapper" class="div1"> 
+                <h3>espresso</h3> 
+                <p>Espresso is a coffee-making method of Italian origin, in which a small amount of nearly boiling water is forced under pressure (expressed) through finely-ground coffee beans.</p>
+            </div>
+            <div class="div2"> 
+                <img class="grid-image" src="img/cap.jpg"> 
+            </div>
+            <div  class="div3"> 
+               <img class="grid-image" src="img/esspre.jpg">
+            </div>
+            <div id="grid-wrapper" class="div4">
+                 <h3>cappucino</h3>
+                 <p>Espresso is a coffee-making method of Italian origin, in which a small amount of nearly boiling water is forced under pressure (expressed) through finely-ground coffee beans.</p>
+             </div>
+        </div>
+    </section>
+
+    <section id="form-section">
+        <div id="contact-picture">
+            <h2 id="contact-heading">let's talk <br> coffee.</h2>
+        </div>
+
+        <h2 id="contact-heading" class="mobile-only">let's talk <br> coffee.</h2>
+        <div id="form-wrapper">
+            <form action="/action_page.php">
+                <input class="inputForms" type="text" name="firstname" placeholder="Name" id="name-input"><br>
+                <input class="inputForms" type="text" name="lastname" placeholder="Email" id="email-input"><br>
+                <textarea class="inputForms message" name="comment" form="usrform" placeholder="Message" id="message-input"></textarea><br>
+                <p class="error" id="form-error"></p>
+                <input id="formButton" type="submit" value="Submit">
+            </form>
+        </div>  
+    </section>
+
+    <footer>
+        <div id="footer-wrapper">
+            <h1 id="coffee-heading">coffee.</h1>
+            <div id="footer-menu">
+                <a class="footer-menu-link" href="https//www.google.com">Home</a>
+                <a class="footer-menu-link" href="https//www.google.com">Contact</a>
+                <a class="footer-menu-link" href="https//www.google.com">About</a>
+            </div>
+        </div>
+        <div id="copyright" style="width=100%; background-color:#F7F7F7;">
+            <p style="font-size: 0.5em; width=100%; text-align: center; padding-top: 2px;">© 2020 Get Coding</p>
+        </div>
+    </footer>
+
+    <button class="hidden" id="toTopButton"><img src="img/jumptotop.svg"/></button>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
