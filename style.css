@@ -1,0 +1,11 @@
+fieldset{
+    margin: auto;
+}
+
+label {
+    font-family:'Courier New', Courier, monospace;
+}
+
+input {
+    margin: .4rem;
+}
