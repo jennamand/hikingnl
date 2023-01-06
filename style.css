@@ -1,5 +1,7 @@
 fieldset{
     margin: auto;
+    border-width: medium;
+    width: 30%;
 }
 
 label {
@@ -8,4 +10,13 @@ label {
 
 input {
     margin: .4rem;
+}
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#button {
+    
 }
