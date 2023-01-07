@@ -16,12 +16,18 @@
 
     <form>
         <fieldset>
-        <input type="radio" id="easy" name="difficulty" value="Easy"> Easy
-        <br>
-        <input type="radio" id="hard" name="difficulty" value="Hard"> Hard
+            <input type="radio" id="easy" name="difficulty" value="Easy"> Easy
+            <br>
+            <input type="radio" id="hard" name="difficulty" value="Hard"> Hard
+            <br>
+        <div id="button">
+            <button type="button" onclick="displayArray()">Find a Hike!</button>
+        </div>
+        </fieldset>
+    </form>
 
-    <button type="findhike">Find a Hike!</button>
-    </div>
+ <p id="output"></p>
+    
 
     <script src="src/index.js"></script>
 </body>

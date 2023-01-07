@@ -1,29 +1,46 @@
+
+//Allows console.log to display what radio button was selected.
+
 document.getElementById('easy').onclick = function () {
     console.log("Easy")
 }
 document.getElementById('hard').onclick = function () {
     console.log("Hard")
 }
+   
+//Displaying the trail name based on radio button selected.
 
-let array = [
-    ['Easy','Hard'],
-    ['Silver Mine Head Path', 'White Horse Path']
-];
+function displayArray() {
 
- for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array[i].length; j++) {
-        console.log(array[i][j]);
-    }
-}
+    let difficulty = document.getElementsByName('difficulty');
 
+//Two dimensional array
 
-function displayRadioValue() {
-    var array = document.getElementsByName('difficulty');
+    let hikes = [
+        ["Easy",'Silver Mine Head Path'],
+        ['Hard','White Horse Path']
+    ];
+        console.log(hikes)
       
-    for(i = 0; i < array.length; i++) {
-        if(array[i].checked)
-        document.getElementById("trail").innerHTML
-                = "Trail: "+array[i].value;
+    for(i = 0; i < difficulty.length; i++) {
+        if(difficulty[i].checked) {
+            
+            let checked = difficulty[i].value
+            console.log("Selected: "+checked)
 
+            for(j = 0; j < hikes.length; j++) {
+                /* console.log("Row: "+hikes[j][0]) */
 
+                if(checked == hikes[j][0]) {
+                    console.log("Hike: "+hikes[j][1])
+
+                    document.getElementById("output").innerHTML
+                        = "Hike: "+hikes[j][1];
+                }
+            }
+        } 
+        
+    }
+} 
+ 
 
