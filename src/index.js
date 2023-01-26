@@ -37,10 +37,5 @@ function displayArray() {
                     document.getElementById("output").innerHTML
                         = "Hike: "+hikes[j][1];
                 }
-            }
-        } 
-        
     }
-} 
- 
-
+}
