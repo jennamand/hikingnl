@@ -1,41 +1,50 @@
 
 //Allows console.log to display what radio button was selected.
+let chosen;
 
 document.getElementById('easy').onclick = function () {
     console.log("Easy")
+    chosen = "Easy";
 }
 document.getElementById('hard').onclick = function () {
     console.log("Hard")
+    chosen = "Hard";
 }
-   
-//Displaying the trail name based on radio button selected.
 
 function displayArray() {
-
-    let difficulty = document.getElementsByName('difficulty');
 
 //Two dimensional array
 
     let hikes = [
-        ["Easy",'Silver Mine Head Path'],
-        ['Hard','White Horse Path']
+        ['Easy','Silver Mine Head Path', 5],
+        ['Hard','White Horse Path', 4],
+        ['Easy','Father Troy', 3]
     ];
         console.log(hikes)
       
-    for(i = 0; i < difficulty.length; i++) {
-        if(difficulty[i].checked) {
-            
-            let checked = difficulty[i].value
-            console.log("Selected: "+checked)
+    let results = [];
+    console.log(results);
 
-            for(j = 0; j < hikes.length; j++) {
-                /* console.log("Row: "+hikes[j][0]) */
+    for(i = 0; i < hikes.length; i++) {
+    
+              if(hikes[i][0] == chosen) {  //Checks row for difficulty
+                console.log("Row: "+chosen)
 
-                if(checked == hikes[j][0]) {
-                    console.log("Hike: "+hikes[j][1])
+                    results.push(hikes[i][1]); //Shows corrisponding hike with chosen difficulty
 
-                    document.getElementById("output").innerHTML
-                        = "Hike: "+hikes[j][1];
-                }
-    }
-}
+                                document.getElementById("output").innerHTML //Shows users their result
+                                = "Trail: "+results.join(", ");
+
+              }
+            }
+        }
+
+
+                            
+//results[i] = hikes[i][1];
+
+//document.getElementById("output").innerHTML = "Trail: "+results[i];
+
+        //We need to check the row for the difficulty value, compare it with the chosen variable and collect a list of rows that match that criteria
+        //Populate "results" arrays with corresponding hikes
+        //show the users on screen what hike they selected
