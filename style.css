@@ -1,14 +1,30 @@
 fieldset{
     margin: auto;
-    border-width: medium;
-    width: 30%;
+    border-width: 2px;
+    border-color: #060606;
+    width: 80%;
 }
 
 input {
     margin: .4rem;
 }
 
-body{
+body {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
+    background-color: #F6FFF8;
+}
+
+#header {
+    color:#060606;
+    margin-top: 100px;
+}
+
+#result {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#button {
+    margin-top: 8px;
+    
 }

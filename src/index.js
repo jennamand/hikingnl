@@ -39,11 +39,13 @@ function displayArray() {
             }
         }
 
-
+// if(hikes[i][0] == chosen) {
                             
-//results[i] = hikes[i][1];
+    //results[i] = hikes[i][1];
 
-//document.getElementById("output").innerHTML = "Trail: "+results[i];
+        //document.getElementById("output").innerHTML = "Trail: "+results[i];
+
+    //}
 
         //We need to check the row for the difficulty value, compare it with the chosen variable and collect a list of rows that match that criteria
         //Populate "results" arrays with corresponding hikes
