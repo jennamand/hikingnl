@@ -1,8 +1,9 @@
-fieldset{
+fieldset {
     margin: auto;
     border-width: 2px;
     border-color: #060606;
     width: 80%;
+    font-family: 'Bitter', serif;
 }
 
 input {
@@ -11,20 +12,34 @@ input {
 
 body {
     text-align: center;
-    font-family: 'Pathway Gothic One', sans-serif;
     background-color: #F6FFF8;
+    font-family: 'Bitter', serif;
 }
 
-#header {
-    color:#060606;
-    margin-top: 100px;
+h1 {
+    font-size: 30px;
+    font-weight: 100;
+    color: darkgreen;
 }
 
-#result {
-    font-family: 'Pathway Gothic One', sans-serif;
+#output {
+    font-size: 18px;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 20px;
 }
 
 #button {
     margin-top: 8px;
-    
+}
+
+#container {
+    margin: auto;
+    margin-top: 50px;
+}
+
+img {
+    margin-top: 5px;
 }

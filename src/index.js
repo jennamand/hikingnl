@@ -16,9 +16,10 @@ function displayArray() {
 //Two dimensional array
 
     let hikes = [
-        ['Easy','Silver Mine Head Path', 5],
-        ['Hard','White Horse Path', 4],
-        ['Easy','Father Troy', 3]
+        ['Easy','Silver Mine Head Path', 3.8],
+        ['Hard','White Horse Path', 18.2],
+        ['Easy','Father Troy', 8.9],
+        ['Hard','Spout Path', 16.2]
     ];
         console.log(hikes)
       
@@ -27,13 +28,15 @@ function displayArray() {
 
     for(i = 0; i < hikes.length; i++) {
     
-              if(hikes[i][0] == chosen) {  //Checks row for difficulty
-                console.log("Row: "+chosen)
+        if(hikes[i][0] == chosen) {  //Checks row for difficulty
+            console.log("Row: "+chosen)
 
                     results.push(hikes[i][1]); //Shows corrisponding hike with chosen difficulty
 
-                                document.getElementById("output").innerHTML //Shows users their result
-                                = "Trail: "+results.join(", ");
+                        document.getElementById("output").innerHTML //Shows users their result
+                        = "Trail: "+results.join(" <br> ");
+
+                
 
               }
             }
