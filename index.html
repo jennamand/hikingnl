@@ -16,25 +16,36 @@
 <body>
     <div id="container"></div>
 
-            <h1>HIKE NEWFOUNDLAND!</h1>
+        <h1>HIKE NEWFOUNDLAND!</h1>
         
-        <div id="image-main">
-            <img src="img/grosmorne.jpeg" width="640" height="369" alt="Gros Morne" />
-        </div>
-        
-            <h2>Select Difficulty:</h2>
+            <div id="image-main">
+                <img src="img/grosmorne.jpeg" width="640" height="369" alt="Gros Morne"/>
+            </div>
+                
             <form>
                 <fieldset>
+                    <h2>Select Difficulty:</h2>
+
                     <input type="radio" id="easy" name="difficulty" value="Easy"> Easy
                     <br>
                     <input type="radio" id="hard" name="difficulty" value="Hard"> Hard
                     <br>
+                    <h3>Select Desired Length</h3>
+
+                        <div class="rangeslider">
+                        <input type="range" min="1" max="25" value="1" class="slider" id="sliderRange" oninput="filter(this)">
+                        <p> <span id="demo"></span> km</p>
+                        </div>
+
                         <div id="button">
                             <button type="button" onclick="displayArray()">Find a Hike!</button>
                         </div>
-                 </fieldset>
+
+                </fieldset>
             </form>
-        </div>
+
+              
+    </div>
 
     <div id="result">
         <p id="output"></p>
