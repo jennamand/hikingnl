@@ -45,7 +45,6 @@ function displayArray() {
 
 let slider = document.getElementById("sliderRange");
 let length = document.getElementById("demo");
-let trailName = document.getElementById("output");
 
 length.innerHTML = slider.value;
 
@@ -55,24 +54,18 @@ slider.oninput = function displayArray() {
 
     length.innerHTML = this.value; // Displays slider value
 
-    let selectedTrails = hikes.filter(function(hikes) {
-
-    return hikes[2] == slider.value;
-
-  });
-
-    if(selectedTrails.length > 0) {
-
-        let trailNames = selectedTrails.map(function(hikes) {
-        return hikes[1];
-
-        });
-
-        document.getElementById("output").innerHTML = "Trail name: " + trailNames.join(", ");
-    } 
+    for(i = 0; i < hikes.length; i++) {
     
-    else {
-        document.getElementById("output").innerHTML = "No trail with the selected length found.";
-    }   
-    
-} 
+        if(this.value <= hikes[i][2]) {
+            console.log("Length: "+this.value)
+
+            results.push(hikes[i][1]);
+
+            document.getElementById("output").innerHTML = "Trail: "+results.join(" <br> ");
+        }
+
+        else {
+            document.getElementById("output").innerHTML = "No trail with the selected length found.";
+        }  
+    }
+}
